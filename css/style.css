@@ -9,17 +9,24 @@ body {
 
 
 /* SEO optimization */
+
+
 #citation {
-    font-size: 3vh;
+    font-size: 2rem;
     font-style: italic;
 }
 
 #citationAuteur {
-    font-size: 2.4vh;
+    font-size: 1.8rem;
 }
 
 .descriptionService {
-    font-size: 2.4vh;
+    font-size: 1.8rem;
+}
+
+.propositionService {
+    font-size: 2rem;
+    font-weight: 600;
 }
 /* SEO optimization */
 
@@ -318,7 +325,7 @@ a:hover {
 }
 
 .navbar-brand img {
-    height: 10vh;
+    height: 10%;
     margin: 0 5px 0 0;
     
 }
@@ -341,7 +348,7 @@ a:hover {
 .nav > li {
     float: left;
     margin-top: 4px;
-    font-size: 16px;
+    font-size: 2.2rem;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -671,7 +678,7 @@ a {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1200px;
 }
 
 .hero-bloc-text {
@@ -693,7 +700,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 1.6rem;
 }
 
 .tight-width-whitespace {
@@ -721,14 +728,14 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 2rem;
     line-height: 1.4em;
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 2rem;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
     color: #333333!important;
 }
 
