@@ -28,6 +28,22 @@ body {
     font-size: 2rem;
     font-weight: 600;
 }
+
+.alignementVerticalHeader {
+    display: flex;
+    align-items: center;
+}
+
+.fixationMenuEnTete {
+    position: fixed!important;
+    top: 0;
+    z-index: 9999;
+}
+
+main {
+    position: relative;
+    top: 10vh;
+}
 /* SEO optimization */
 
 a,
@@ -76,7 +92,7 @@ a:hover {
 }
 
 .bloc-sm {
-    padding: 20px 50px;
+    padding: 20px 0 0 0;
 }
 
 .bg-center,
@@ -317,7 +333,7 @@ a:hover {
 
 .navbar-brand {
     height: auto;
-    padding: 3px 15px;
+    padding: 0 0 0 2vh;
     font-size: 25px;
     font-weight: normal;
     font-weight: 600;
@@ -361,8 +377,9 @@ a:hover {
 }
 
 .navbar-toggle {
-    margin: 10px 10px 0 0;
+    margin: 0 2vh 0 auto;
     border: 0px;
+    padding: 0;
 }
 
 .navbar-toggle:hover {
