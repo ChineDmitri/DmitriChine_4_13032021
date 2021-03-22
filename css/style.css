@@ -38,12 +38,21 @@ body {
     position: fixed!important;
     top: 0;
     z-index: 9999;
+    border-bottom: 3px solid black;
 }
 
-main {
+.mainContent {
     position: relative;
-    top: 10vh;
+    top: 117px;
 }
+
+@media (max-width: 768px) {
+    .mainContent {
+        position: relative;
+        top: 73px;
+    }
+}
+
 /* SEO optimization */
 
 a,
@@ -92,7 +101,13 @@ a:hover {
 }
 
 .bloc-sm {
-    padding: 20px 0 0 0;
+    padding: 20px 0 20px 0;
+}
+
+@media (max-width: 768px) {
+    .bloc-sm {
+        padding: 20px 0 0 0;
+    }
 }
 
 .bg-center,
