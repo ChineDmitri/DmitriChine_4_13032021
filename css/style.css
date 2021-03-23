@@ -17,6 +17,7 @@ body {
 }
 
 #citationAuteur {
+    color: black!important;
     font-size: 1.8rem;
 }
 
@@ -52,7 +53,29 @@ body {
         top: 73px;
     }
 }
+.footerContent {
+    position: relative;
+    top: 117px;
+}
 
+@media (max-width: 768px) {
+    .footerContent {
+        position: relative;
+        top: 73px;
+    }
+}
+
+.alignementIcoSocial {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer li a {
+    color: #FAD5C4!important;
+}
+footer li a:hover {
+    color: white!important; 
+}
 /* SEO optimization */
 
 a,
@@ -706,7 +729,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #3F3F3F!important;
 }
 
 .container {
@@ -757,11 +780,12 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    padding-bottom: 10px;
 }
 
 h2 {
     font-size: 2rem;
-    line-height: 1.4em;
+    color: black!important;
 }
 
 h3 {
@@ -791,7 +815,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: #FAD5C4!important;
 }
 
 .portfolio-thumb {
@@ -830,7 +854,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FAFAFA!important;
 }
 
 .btn-atomic-tangerine {
@@ -840,7 +864,7 @@ h4 {
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
-    color: #FFFFFF!important;
+    color: #303030!important;
 }
 
 .ltc-white {
