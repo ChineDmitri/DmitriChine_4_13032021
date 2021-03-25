@@ -1,0 +1,3 @@
+user-agent:*
+disallow: http://backlink.com/
+disallow: http://meilleursliens.com/
