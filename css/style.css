@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -36,34 +40,32 @@ body {
 }
 
 .fixationMenuEnTete {
-    position: fixed!important;
+    position: sticky!important;
     top: 0;
     z-index: 9999;
     border-bottom: 3px solid black;
 }
 
-.mainContent {
+/* .mainContent {
     position: relative;
-    top: 117px;
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .mainContent {
         position: relative;
         top: 73px;
     }
-}
-.footerContent {
+} */
+/* .footerContent {
     position: relative;
-    top: 117px;
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .footerContent {
         position: relative;
         top: 73px;
     }
-}
+} */
 
 .alignementIcoSocial {
     display: flex;
@@ -168,7 +170,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("../img/texture-paper.png");
+    background: url("../img/compresses/texture-paper.png");
     background-size: 280px 280px;
 }
 
@@ -620,6 +622,7 @@ a[data-lightbox]:hover::before {
     font-size: 32px;
     width: 50px;
     height: 50px;
+    line-height: 53px;
     margin-left: -25px;
     border-radius: 50%;
     background: rgba(0, 0, 0, .6);
@@ -644,14 +647,28 @@ a[data-lightbox]:hover img {
 }
 
 #lightbox-modal .modal-dialog {
-    width: 90%;
+    width: 80%;
     max-width: 900px;
-    margin: 0 auto 0;
+    margin: 20vh auto auto auto;
 }
 
+
 #lightbox-modal .modal-dialog img {
-    max-height: 90vh;
+    max-height: 70vh;
     margin: 0 auto;
+    width: 50%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    #lightbox-modal .modal-dialog {
+        margin: 0 auto 0;
+    }  
+
+    #lightbox-modal .modal-dialog img {
+        width: 100%;
+        height: 80vh;
+    }
 }
 
 .lightbox-caption {
@@ -659,9 +676,6 @@ a[data-lightbox]:hover img {
     color: #FFF;
     background: rgba(0, 0, 0, .5);
     position: absolute;
-    left: 15px;
-    right: 15px;
-    bottom: 5px;
 }
 
 .close-lightbox {
@@ -674,8 +688,8 @@ a[data-lightbox]:hover img {
     background: rgba(0, 0, 0, .5);
     border: none;
     line-height: 30px;
-    padding: 0 9px 5px;
-    opacity: 0.3;
+    padding: 5px 10px;
+    opacity: 0.7;
 }
 
 .close-lightbox:hover,
@@ -694,7 +708,7 @@ a[data-lightbox]:hover img {
     position: absolute;
     top: 45%;
     z-index: 1;
-    opacity: 0.4;
+    opacity: 0.8;
 }
 
 .next-lightbox {
@@ -820,6 +834,9 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    max-height: 300px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .portfolio-row {
@@ -897,11 +914,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("../img/la-chouette-agence-banniere.jpg");
+    background-image: url("../img/compresses/la-chouette-agence-banniere.jpg");
 }
 
 .bg-presentation {
-    background-image: url("../img/image-de-presentation.bmp");
+    background-image: url("../img/compresses/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -981,8 +998,8 @@ h4 {
     h6,
     p,
     #disqus_thread {
-        padding-left: 10px!important;
-        padding-right: 10px!important;
+        padding-left: 0!important;
+        padding-right: 0!important;
     }
     .b-parallax {
         background-attachment: scroll;
