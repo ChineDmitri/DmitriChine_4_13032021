@@ -1,4 +1,6 @@
 user-agent:*
-disallow: http://backlink.com/
-disallow: http://meilleursliens.com/
-disallow: http://meilleursliens.com/
+Disallow: /fonts/
+Disallow: /includes/
+Disallow: /js/
+Disallow: /img/
+Disallow: /css/
