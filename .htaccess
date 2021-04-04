@@ -1,0 +1,31 @@
+# BEGIN Cache-Control Headers
+<IfModule mod_headers.c>
+<FilesMatch "\.(ico|jpe?g|png|gif|swf|css|gz)$">
+Header set Cache-Control "max-age=2592000, public"
+</FilesMatch>
+<FilesMatch "\.(js)$">
+Header set Cache-Control "max-age=2592000, private"
+</FilesMatch>
+<filesMatch "\.(html|htm)$">
+Header set Cache-Control "max-age=7200, public"
+</filesMatch>
+# Enleve le cache pour les ressources dynamiques
+<FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+Header unset Cache-Control
+</FilesMatch>
+</IfModule>
+# END Cache-Control Headers
+
+# BEGIN Expires Headers
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType img/jpg "access plus 1 year"
+ExpiresByType img/png "access plus 1 year"
+ExpiresByType img/compresses/jpeg "access plus 1 year"
+ExpiresByType img/compresses/png "access plus 1 year"
+ExpiresByType css/css "access plus 1 month"
+ExpiresByType js/x-javascript "access plus 1 month"
+ExpiresByType js/javascript "access plus 1 month"
+ExpiresDefault "access plus 2 days"
+</IfModule>
+# END Expires Headers
