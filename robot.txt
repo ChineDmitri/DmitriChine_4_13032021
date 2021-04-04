@@ -1,5 +1,6 @@
-user-agent:*
+user-agent: *
 Disallow: /includes/
 Disallow: /js/
 Disallow: /img/
 Disallow: /css/
+Disallow: /fonts/
