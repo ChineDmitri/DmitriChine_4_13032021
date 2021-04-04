@@ -1,4 +1,4 @@
-user-agent: *
+User-Agent: *
 Disallow: /includes/
 Disallow: /js/
 Disallow: /img/
